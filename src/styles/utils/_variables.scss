@@ -1,0 +1,18 @@
+$primaryColor: #FF6060;
+$fontFamily: 'Montserrat', sans-serif;
+
+body {
+    width: 2240px;
+    padding-left: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $fontFamily;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: $primaryColor;
+}

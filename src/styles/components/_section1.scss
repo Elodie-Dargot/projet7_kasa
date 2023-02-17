@@ -1,0 +1,25 @@
+.section1 {
+    width: 2000px;
+    height: 360px;
+
+
+    img{
+        border-radius: 25px 25px 25px 25px;
+        width: 2000px;
+        height: 360px;
+        position: absolute;    
+        filter: brightness(80%);
+    }
+
+    p {
+        position: relative;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 64px;
+        color: #FFFFFF;
+    }
+}

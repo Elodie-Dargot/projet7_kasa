@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 2000px;
+}
+
+.header_logo {
+    color: $primaryColor !important;
+    width: 317px;
+    height: 168px;
+}
