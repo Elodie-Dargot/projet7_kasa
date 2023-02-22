@@ -1,20 +1,15 @@
 import React from 'react';
-import Data from "../datas/logements.json"
 
-const Card = () => {
+const Card = (props) => {
 
     return (
-        <div className='housings'>
-            {Data.map(housing => {
-                return (
-                    <div key={housing.id} className="housings_cards">
-                        <h2>{housing.title}</h2>
-                    </div>
-
-                )
-            })}
+        <div>
+            <a className="housings_cards" href={props.id}>
+                <img className='housings_cards_img' src={props.img} alt="accomodation" />
+                <h2>{props.title}</h2>
+            </a>
         </div>
-    );
+    )
 };
 
 export default Card;

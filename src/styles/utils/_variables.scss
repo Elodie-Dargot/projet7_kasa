@@ -1,5 +1,10 @@
 $primaryColor: #FF6060;
+$secondaryColor: #f6f6f6;
 $fontFamily: 'Montserrat', sans-serif;
+
+*{
+    box-sizing: border-box;
+}
 
 body {
     width: 2240px;
