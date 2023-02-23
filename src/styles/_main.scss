@@ -1,4 +1,4 @@
-@import "./utils/_variables";
+@import "./utils/variables";
 @import "./pages/_home";
 @import "./components/_header";
 @import "./components/_navigation";
@@ -6,3 +6,5 @@
 @import "./components/_banner";
 @import "./components/_footer";
 @import "./components/_collapse";
+@import "./pages/_housing.scss";
+@import "./components/slideShow";

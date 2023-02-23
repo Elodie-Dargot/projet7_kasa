@@ -3,7 +3,7 @@ import Banner from '../components/Banner';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import bannerAboutPage from '../assets/images/bannerAboutPage.png'
-import Collapse from '../components/Collapse';
+import Collapse from '../containers/Collapse';
 import Data from '../datas/collapseRes.json'
 import '../styles/pages/_about.scss'
 

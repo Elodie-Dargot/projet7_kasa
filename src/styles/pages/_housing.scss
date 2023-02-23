@@ -1,0 +1,98 @@
+.housingPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 2000px;
+
+    .housingPage__resume {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.housingPage__resume__titleSection {
+
+    .housingPage__resume__titleSection__title {
+        font-size: 38px;
+        font-weight: 500;
+        color: #FF6060;
+        margin-top: 30px;
+    }
+
+    .housingPage__resume__titleSection__city {
+        font-size: 20px;
+        font-weight: 500;
+        color: #FF6060;
+        margin-top: 10px;
+
+    }
+
+    .housingPage__resume__titleSection__tags {
+        display: flex;
+        justify-content: flex-start;
+
+        .housingPage__resume__titleSection__tag {
+            text-align: center;
+            padding: 15px 15px;
+            margin: 30px 20px auto 0px;
+            border-radius: 20px;
+            background-color: #FF6060;
+            color: white;
+        }
+    }
+}
+
+.housingPage__resume__userSection {
+
+    .housingPage__resume__userSection__user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FF6060;
+        font-size: 20px;
+        font-weight: 500;
+
+    }
+
+    .housingPage__resume__userSection__user__picture {
+        border-radius: 90px;
+        margin: 30px 0px 20px 20px;
+    }
+
+    .housingPage__resume__userSection__ratings {
+        text-align: center;
+    }
+}
+
+
+.housingPage__collapses {
+    margin-top: 40px;
+    margin-bottom: 180px;
+    width: 2000px;
+    display: flex;
+    justify-content: space-between;
+
+    .housingPage__collapse button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 550px;
+        width: 880px;
+        height: 52px;
+        background-color: #FF6060;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-size: 22px;
+        z-index: 1;
+    }
+
+    .housingPage__collapse .collapse_text {
+        z-index: -1;
+        width: 880px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+}
