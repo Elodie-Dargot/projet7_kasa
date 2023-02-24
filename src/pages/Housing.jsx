@@ -1,7 +1,5 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Data from "../datas/logements.json";
 import SlideShow from '../containers/SlideShow';
 import Collapse from '../containers/Collapse';
@@ -14,7 +12,6 @@ const Housing = () => {
 
     return (
         <div className="housingPage">
-            <Header />
             <SlideShow img={housing.pictures} />
             <div className="housingPage__resume">
                 <div className="housingPage__resume__titleSection">
@@ -44,7 +41,6 @@ const Housing = () => {
                     <p key={index}>{equipement}</p>
                 ))}/>
             </div>
-            <Footer />
         </div>
     );
     
