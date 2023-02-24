@@ -18,7 +18,7 @@
         font-size: 38px;
         font-weight: 500;
         color: #FF6060;
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .housingPage__resume__titleSection__city {
@@ -51,7 +51,7 @@
         justify-content: center;
         align-items: center;
         color: #FF6060;
-        font-size: 20px;
+        font-size: 30px;
         font-weight: 500;
 
     }
@@ -61,38 +61,10 @@
         margin: 30px 0px 20px 20px;
     }
 
-    .housingPage__resume__userSection__ratings {
-        text-align: center;
+    .housingPage__resume__userSection__rating__star {
+        width: 50px;
+        height: 50px;
     }
 }
 
 
-.housingPage__collapses {
-    margin-top: 40px;
-    margin-bottom: 180px;
-    width: 2000px;
-    display: flex;
-    justify-content: space-between;
-
-    .housingPage__collapse button{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        column-gap: 550px;
-        width: 880px;
-        height: 52px;
-        background-color: #FF6060;
-        border: none;
-        border-radius: 15px;
-        color: white;
-        font-size: 22px;
-        z-index: 1;
-    }
-
-    .housingPage__collapse .collapse_text {
-        z-index: -1;
-        width: 880px;
-        border-radius: 0px 0px 20px 20px;
-    }
-
-}

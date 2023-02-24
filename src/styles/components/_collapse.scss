@@ -45,3 +45,33 @@
     font-weight: 400;
     padding: 30px;
 }
+
+.housingPage__collapses {
+    margin-top: 40px;
+    margin-bottom: 180px;
+    width: 2000px;
+    display: flex;
+    justify-content: space-between;
+
+    .housingPage__collapse button{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        column-gap: 550px;
+        width: 880px;
+        height: 80px;
+        background-color: #FF6060;
+        border: none;
+        border-radius: 15px;
+        color: white;
+        font-size: 22px;
+        z-index: 1;
+    }
+
+    .housingPage__collapse .collapse_text {
+        z-index: -1;
+        width: 880px;
+        border-radius: 0px 0px 20px 20px;
+    }
+
+}

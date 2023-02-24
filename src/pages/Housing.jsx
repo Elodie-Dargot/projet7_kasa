@@ -1,10 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Data from "../datas/logements.json";
-import { useParams } from 'react-router-dom';
 import SlideShow from '../containers/SlideShow';
 import Collapse from '../containers/Collapse';
+import Ratings from '../containers/Ratings';
 
 
 const Housing = () => {
@@ -34,9 +35,7 @@ const Housing = () => {
                         <p>{housing.host.name}</p>
                         <img className="housingPage__resume__userSection__user__picture" src={housing.host.picture} alt={housing.host.name} />
                     </div>
-                    <div className="housingPage__resume__userSection__ratings">
-                        <p>ratings</p>
-                    </div>
+                    <Ratings rate={housing.rating} />
                 </div>
             </div>
             <div className='housingPage__collapses'>

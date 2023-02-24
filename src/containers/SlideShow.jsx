@@ -3,30 +3,31 @@ import arrow from '../assets/images/arrow.png'
 
 const SlideShow = (props) => {
 
-    const [numero, setNumero] = useState(0);
+    const [number, setNumber] = useState(0);
     const slide = props.img;
 
     function ChangeSlide(sens) {
 
-        let nouveauNumero = numero + sens;
+        let newNumber = number + sens;
 
-        if (nouveauNumero < 0) {
-            nouveauNumero = slide.length -1
+        if (newNumber < 0) {
+            newNumber = slide.length -1
         }
             
             
-        if (nouveauNumero > slide.length - 1) {
-            nouveauNumero = 0;
+        if (newNumber > slide.length - 1) {
+            newNumber = 0;
         }  
 
-        setNumero(nouveauNumero);
+        setNumber(newNumber);
     }
 
     return (
         <div className='slider'>
-            <img src={slide[numero]} alt="accomodations" className='slide' />
-            <div onClick={() => ChangeSlide(-1)}><img src={arrow} alt='flèche' className="precedent"/></div>
-            <div onClick={() => ChangeSlide(1)}><img src={arrow} alt='flèche' className="suivant"/></div>
+            <img src={slide[number]} alt="accomodations" className='slider__slide' />
+            <div onClick={() => ChangeSlide(-1)}><img src={arrow} alt='flèche' className="previous"/></div>
+            <div onClick={() => ChangeSlide(1)}><img src={arrow} alt='flèche' className="next"/></div>
+            <div className='slider__counter'>{number + 1}/{slide.length}</div>
         </div>
     );
 };
