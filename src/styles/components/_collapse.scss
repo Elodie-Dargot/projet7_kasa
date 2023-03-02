@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: flex-start;
     width: 1600px;
-    height: 1000px;
-    margin-bottom: 150px;
+    // height: 1000px;
+    // margin-bottom: 150px;
 }
 
 .aboutPage_collapse {
@@ -16,6 +16,14 @@
 
 .aboutPage_collapse button {
     width: 1600px;
+    border-radius: 20px;
+
+    p {
+        font-size: 24px;
+    }
+}
+
+.collapse__button {
     height: 80px;
     padding: 0px 30px;
     display: flex;
@@ -24,18 +32,22 @@
     background-color: #FF6060;
     color: white;
     border: none;
-    border-radius: 20px;
-
     // font-family: $fontFamily;
-    p {
-        font-size: 24px;
-    }
+}
 
-    .button--toggle {
-        width: 54px;
-        height: 34px;
-        margin-right: 40px;
-    }
+.button__toggle {
+    width: 54px;
+    height: 34px;
+    margin-right: 40px;
+    rotate: 270deg;
+}
+
+.button__toggle--open {
+    width: 54px;
+    height: 34px;
+    margin-right: 40px;
+    transform: rotate(90deg);
+    transition: transform;
 }
 
 .collapse_text {
@@ -48,22 +60,15 @@
 
 .housingPage__collapses {
     margin-top: 40px;
-    margin-bottom: 180px;
+    // margin-bottom: 180px;
     width: 2000px;
     display: flex;
     justify-content: space-between;
 
-    .housingPage__collapse button{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+    .housingPage__collapse button {
         column-gap: 550px;
         width: 880px;
-        height: 80px;
-        background-color: #FF6060;
-        border: none;
         border-radius: 15px;
-        color: white;
         font-size: 22px;
         z-index: 1;
     }

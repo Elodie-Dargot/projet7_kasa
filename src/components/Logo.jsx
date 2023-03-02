@@ -7,8 +7,8 @@ const logoColor = new Map([
     ['white', './whiteLogo.svg']
 ])
     return (
-        <div >
-            <img src={logoColor.get(props.logoColor)} alt="Logo Kasa" className="header_logo footer_logo"/>
+        <div className='header__logo footer__logo'>
+            <img src={logoColor.get(props.logoColor)} alt="Logo Kasa" className="header__logo footer__logo"/>
         </div>
     );
 };

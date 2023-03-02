@@ -1,11 +1,15 @@
 .header {
     display: flex;
     justify-content: space-between;
-    width: 2000px;
+    align-items: center;
+    margin: 3em 9em;
 }
 
-.header_logo {
-    color: $primaryColor !important;
+.header__logo {
     width: 317px;
     height: 168px;
+}
+
+.navigation {
+
 }
