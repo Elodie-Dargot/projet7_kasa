@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import arrow from '../assets/images/arrow.png';
+import arrow from '../assets/images/Vector.svg';
 import '../styles/components/_collapse.scss'
 
 
@@ -15,12 +15,12 @@ const Collapse = (props) => {
 
     return (
         <div className= {props.className}>
-            <button onClick={toggle}>
+            <button onClick={toggle} className='collapse__button'>
                 <p>{props.title}</p>
-                <img src={arrow} alt="flèche" className='button--toggle open close'/>
+                <img src={arrow} alt="flèche" className={open ? "button__toggle--open" : "button__toggle"}/>
             </button>
             {open && <div className='collapse_text'>
-                <span>{props.text}</span>
+                <p>{props.text}</p>
             </div>}
         </div>
     )

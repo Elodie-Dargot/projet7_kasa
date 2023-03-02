@@ -8,7 +8,7 @@ import '../styles/pages/_about.scss'
 const About = () => {
     return (
         <div className="aboutPage">
-            <Banner img={bannerAboutPage} />
+            <Banner className='bannerAboutPage' img={bannerAboutPage} />
             <div className='aboutPage_collapses'>
                 {Data.map((collapseRes) => (
                     <Collapse key={collapseRes.id} className= 'aboutPage_collapse' title={collapseRes.title} text={collapseRes.text} />

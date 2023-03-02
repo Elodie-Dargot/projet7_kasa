@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <div className="homePage">
-            <Banner text='Chez vous, partout et ailleurs' img={bannerHomePage} />
+            <Banner className='bannerHomePage' text='Chez vous, partout et ailleurs' img={bannerHomePage} />
             <div className='housings'>
                 {Data.map((housing) => (
                     <Card key={housing.id} id={housing.id} title={housing.title} img={housing.cover}/>
