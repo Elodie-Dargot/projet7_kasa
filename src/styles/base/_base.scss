@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: $fontFamily;
+}
+
+body {
+    max-width: 1600px;
+}
+
+a {
+    text-decoration: none;
+    list-style-type: none;
+    color: $primaryColor;
+}

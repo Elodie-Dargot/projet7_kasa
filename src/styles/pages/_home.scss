@@ -1,7 +1,15 @@
 .homePage {
-    margin: auto 9em;  
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // row-gap: 100px;
+    @include marginPage
+}
+
+.housingSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    padding-bottom: 3.4rem;
+    background-color: #f6f6f6;
+    border-radius: 1.8rem;
 }

@@ -6,7 +6,7 @@ import Header from "../components/Header";
 
 const ErrorPage = () => {
     const error = useRouteError();
-    console.error(error);
+    // console.error(error);
     return (
         <div className="errorPage">
             <Header />

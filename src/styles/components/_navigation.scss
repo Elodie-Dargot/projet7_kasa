@@ -1,16 +1,9 @@
 .navigation ul {
-    padding-top: 25px;
     display: flex;
-    column-gap: 10px;
-    font-size: 36px;
+    justify-content: space-around;
+    column-gap: 4rem;
+    font-size: 1.5rem;
     font-weight: 500;
-    width: 440px;
-
-    li {
-        width: 200px;
-        text-align: right;
-        padding-left: 15px;
-    }
 }
 
 .nav-active {
