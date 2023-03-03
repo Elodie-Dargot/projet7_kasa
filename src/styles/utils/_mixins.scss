@@ -1,0 +1,17 @@
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)) {
+        @content;        
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+@mixin marginPage {
+    margin-top: 2.5rem;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+}

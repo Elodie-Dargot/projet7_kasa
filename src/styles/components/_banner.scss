@@ -1,25 +1,20 @@
 .banner {
-    height: 360px;
-
-
-    img{
-        border-radius: 25px 25px 25px 25px;
-        height: 22rem;    
-        filter: brightness(80%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.7rem;
+    img {
+        width: 100%;
+        margin-top: 3.6rem;
+        border-radius: 1.5rem;
+        filter: brightness(70%);
     }
 
     p {
-        position: relative;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: absolute;
         font-weight: 500;
-        font-size: 64px;
+        font-size: 3em;
         color: #FFFFFF;
+        margin-top: 3.6rem
     }
-}
-
-.bannerHomePage {
-    position: absolute;
 }

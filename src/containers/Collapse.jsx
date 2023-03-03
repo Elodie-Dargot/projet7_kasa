@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import arrow from '../assets/images/Vector.svg';
-import '../styles/components/_collapse.scss'
+// import '../styles/components/_collapse.scss'
+// import '../styles/utils/_variables.scss'
 
 
 const Collapse = (props) => {
