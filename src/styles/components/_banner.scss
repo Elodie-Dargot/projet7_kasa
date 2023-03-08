@@ -2,19 +2,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 2.7rem;
+    @include mobile-only {
+        justify-content: flex-start;
+    }
+
     img {
         width: 100%;
-        margin-top: 3.6rem;
+        height: 14rem;
         border-radius: 1.5rem;
         filter: brightness(70%);
+        @include mobile-only {
+            height: 7rem;
+            border-radius: 0.7rem;
+        }
     }
 
     p {
         position: absolute;
         font-weight: 500;
-        font-size: 3em;
+        font-size: 3rem;
         color: #FFFFFF;
-        margin-top: 3.6rem
+        @include mobile-only {
+            font-size: 1.5rem;
+            padding-left: 1.5rem;
+        }
     }
 }

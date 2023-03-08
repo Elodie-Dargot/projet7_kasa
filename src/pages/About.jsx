@@ -1,6 +1,6 @@
 import React from 'react';
 import Banner from '../components/Banner';
-import bannerAboutPage from '../assets/images/bannerAboutPage.png'
+import bannerAboutPage from '../assets/images/bannerAboutPage.svg'
 import Collapse from '../containers/Collapse';
 import Data from '../datas/collapseRes.json'
 import '../styles/pages/_about.scss'
