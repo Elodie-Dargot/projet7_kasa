@@ -1,6 +1,5 @@
 import { useRouteError } from "react-router-dom";
 import { NavLink } from "react-router-dom"
-import Footer from "../components/Footer";
 import Header from "../components/Header";
 
 
@@ -17,7 +16,6 @@ const ErrorPage = () => {
                     <p className='errorPage__link'>Retourner sur la page d'accueil</p>
                 </NavLink>
             </section>
-            <Footer />
         </div>
     );
 };

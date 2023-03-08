@@ -1,44 +1,51 @@
 .slider {
     position: relative;
-    width: 2000px;
-    height: 620px;
-    margin: auto;
+    width: 100%;
+    height: 25.9rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    @include mobile-only {
+        height: 16rem;   
+       }
 
     .slider__slide {
         width: 100%;
         height: 100%;
         object-fit: cover ;
-        border-radius: 30px;
+        border-radius: 2rem;
     }
 }
 
 .previous, .next {
     cursor: pointer;
     position: absolute;
-    width: 130px;
-    height: 80px;
-    margin: 20px;
+    width: 8rem;
+    height: 5rem;
+    @include mobile-only {
+        width: 1.3rem;
+        height: 1.3rem;
+       }
 }
 
 .previous {
     rotate: 180deg;
     left: 0;
-    top: 40%;
+    top: 46%;
 }
 
 .next {
     right: 0;
-    top: 40%;
+    top: 46%;
 }
 
 .slider__counter {
     position: absolute;
-    bottom: 30px;
+    bottom: 1.8rem;
     align-items: center;
-    font-size: 28px;
+    font-size: 1.2rem;
     color: white;
+    @include mobile-only {
+        opacity: 0;   
+       }
 }

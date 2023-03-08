@@ -4,15 +4,8 @@ $primaryColor: #FF6060;
 $secondaryColor: #f6f6f6;
 $fontFamily: 'Montserrat', 'Arial';
 
-*{
-    max-width: 2400px;
-    box-sizing: border-box;
-    margin: 0;
-    font-family: $fontFamily;
-}
-
-a {
-    text-decoration: none;
-    list-style-type: none;
-    color: $primaryColor;
-}
+$breakpoints: (
+    mobile: 768px,
+    tablet: 992px,
+    // desktop: px,
+);

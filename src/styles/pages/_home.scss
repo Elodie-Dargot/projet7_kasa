@@ -1,7 +1,26 @@
 .homePage {
-    margin: auto 9em;  
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // row-gap: 100px;
+    @include marginPage;
+
+    @include mobile-only {
+        margin: 0 1.3rem;
+    }
+}
+
+.housingSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    padding-bottom: 3.4rem;
+    background-color: #f6f6f6;
+    border-radius: 1.8rem;
+    margin-top: 2.7rem;
+
+    @include mobile-only {
+        flex-direction: column;
+        background-color: transparent;
+        margin-top: 1.5rem;
+    }
 }

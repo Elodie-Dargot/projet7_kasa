@@ -1,11 +1,15 @@
 @import "./utils/variables";
-@import "./pages/_home";
-@import "./components/_header";
-@import "./components/_navigation";
-@import "./components/_card";
-@import "./components/_banner";
-@import "./components/_footer";
-@import "./components/_collapse";
-@import "./pages/_housing.scss";
+@import "./utils/mixins";
+@import "./base/base";
+@import "./components/header";
+@import "./components/navigation";
+@import "./components/banner";
 @import "./components/slideShow";
-@import "./pages/errorPage"
+@import "./components/card";
+@import "./components/collapse";
+@import "./components/footer";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/housing";
+@import "./pages/errorPage";
+
