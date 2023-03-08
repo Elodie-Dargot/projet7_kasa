@@ -21,7 +21,7 @@ const Collapse = (props) => {
                 <img src={arrow} alt="flèche" className={open ? "button__toggle--open" : "button__toggle"}/>
             </button>
             {open && <div className='housingPage__collapse__text aboutPage__collapse__text'>
-                <p>{props.text}</p>
+                <div>{props.text}</div>
             </div>}
         </div>
     )
