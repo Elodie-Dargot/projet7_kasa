@@ -2,9 +2,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include marginPage;
+    margin: 2.5rem 6.2rem 0 6.2rem;
+    @include mobile-only {
+        margin: 1.3rem;
+        }
 }
 
 .header__logo {
     width: 13rem;
+
+    @include tablet-only {
+        width: 9rem;
+    }
 }

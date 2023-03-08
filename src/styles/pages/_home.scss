@@ -1,5 +1,9 @@
 .homePage {
-    @include marginPage
+    @include marginPage;
+
+    @include mobile-only {
+        margin: 0 1.3rem;
+    }
 }
 
 .housingSection {
@@ -12,4 +16,11 @@
     padding-bottom: 3.4rem;
     background-color: #f6f6f6;
     border-radius: 1.8rem;
+    margin-top: 2.7rem;
+
+    @include mobile-only {
+        flex-direction: column;
+        background-color: transparent;
+        margin-top: 1.5rem;
+    }
 }

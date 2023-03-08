@@ -1,17 +1,35 @@
+@mixin marginPage {
+    margin-top: 3.6rem;
+    margin-left: 6.2rem;
+    margin-right: 6.2rem;
+}
+
+@mixin buttonToggle {
+    width: 3.1rem;
+    height: 1.8rem;
+    margin-right: 1rem;
+    @include mobile-only {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0;
+    }
+}
+
+@mixin mobile-only {
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
 @mixin tablet-only {
-    @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @media screen and (max-width: map-get($breakpoints, tablet)) {
         @content;        
     }
 }
 
 @mixin desktop-only {
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @media screen and (max-width: map-get($breakpoints, desktop)) {
         @content;
     }
 }
 
-@mixin marginPage {
-    margin-top: 2.5rem;
-    margin-left: 6.2rem;
-    margin-right: 6.2rem;
-}

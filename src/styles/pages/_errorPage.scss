@@ -1,28 +1,44 @@
 .errorPageBody {
+    @include marginPage;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    @include mobile-only {
+        margin: 1.3rem;   
+       }
 
     .errorPage__title {
-        font-size: 400px;
-        font-weight: 900;
+        font-size: 18rem;
+        font-weight: 700;
         color: #FF6060;
-        padding-top: 70px;
+        padding-top: 4rem;
+        @include mobile-only {
+            font-size: 5.5rem;   
+            padding-top: 6.5rem;
+           }
     }
 
     .errorPage__text {
         color: #FF6060;
-        font-size: 50px;
+        font-size: 2.2rem;
         font-weight: 500;
-        padding-top: 50px;
-        margin-bottom: 200px;
+        padding-top: 1.6rem;
+        margin-bottom: 12rem;
+        @include mobile-only {
+            font-size: 1.2rem;   
+            text-align: center;
+            margin-bottom: 7rem;
+           }
     }
 
     .errorPage__link {
-        margin-bottom: 100px;
-        font-size: 1.7em;
+        margin-bottom: 10rem;
+        font-size: 1.2em;
         font-weight: 500;
         border-bottom: solid #FF6060 1px;
+        @include mobile-only {
+            font-size: 0.9rem;   
+           }
     }
 }
