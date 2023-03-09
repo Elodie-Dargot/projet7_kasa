@@ -1,15 +1,13 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import Data from "../datas/logements.json";
+import { useLoaderData } from 'react-router-dom';
 import SlideShow from '../containers/SlideShow';
 import Collapse from '../containers/Collapse';
 import Ratings from '../containers/Ratings';
 
 
 const Housing = () => {
-    const idObject = useParams();
-    const housing = Data.find(data => data.id === idObject.id)
 
+    const housing = useLoaderData();
     return (
         <div className="housingPage">
             <SlideShow img={housing.pictures} />
