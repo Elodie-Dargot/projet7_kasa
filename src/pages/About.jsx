@@ -1,16 +1,17 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Banner from '../components/Banner';
 import bannerAboutPage from '../assets/images/bannerAboutPage.png'
 import Collapse from '../containers/Collapse';
-import Data from '../datas/collapseRes.json'
 
 const About = () => {
+    const AboutCollapsesData = useLoaderData()
     return (
         <div className="aboutPage">
             <Banner className='bannerAboutPage' img={bannerAboutPage} />
             <div className='aboutPage_collapses'>
-                {Data.map((collapseRes) => (
-                    <Collapse key={collapseRes.id} className= 'aboutPage_collapse' title={collapseRes.title} text={collapseRes.text} />
+                {AboutCollapsesData.map((data) => (
+                    <Collapse key={data.id} className= 'aboutPage_collapse' title={data.title} text={data.text} />
                 ))}
             </div>
         </div>
