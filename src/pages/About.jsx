@@ -5,6 +5,7 @@ import bannerAboutPage from '../assets/images/bannerAboutPage.png'
 import Collapse from '../containers/Collapse';
 
 const About = () => {
+    //je recupère les informations du fichier json contenant les informations des collapses
     const AboutCollapsesData = useLoaderData()
     return (
         <div className="aboutPage">
