@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include tablet-only {
+        height: 17rem;
+        @media (orientation: portrait) {
+             height: 20rem;   
+        }
+    }
     @include mobile-only {
         height: 16rem;   
        }
@@ -22,6 +28,10 @@
     position: absolute;
     width: 8rem;
     height: 5rem;
+    @include tablet-only { 
+        width: 4rem;
+        height: 2rem;
+    }
     @include mobile-only {
         width: 1.3rem;
         height: 1.3rem;
@@ -31,12 +41,12 @@
 .previous {
     rotate: 180deg;
     left: 0;
-    top: 46%;
+    top: 38%;
 }
 
 .next {
     right: 0;
-    top: 46%;
+    top: 38%;
 }
 
 .slider__counter {
@@ -45,7 +55,7 @@
     align-items: center;
     font-size: 1.2rem;
     color: white;
-    @include mobile-only {
+    @include tablet-only {
         opacity: 0;   
        }
 }

@@ -31,6 +31,11 @@
     margin: 2rem auto;
     width: 80%;
 
+    @include tablet-only {
+        margin: 3rem auto;
+        width: 90%;
+    }
+
     @include mobile-only {
         margin: 1rem 0rem;
         width: 100%;
@@ -45,6 +50,9 @@
 
 .aboutPage_collapse button {
     border-radius: 0.5rem;
+    @include tablet-only { 
+        height: 2.5rem;
+    }
 
     @include mobile-only {
         border-radius: 0.3rem;
@@ -53,6 +61,9 @@
 
     p {
         font-size: 1.5rem;
+        @include tablet-only { 
+            font-size: 1rem;
+        }
         @include mobile-only {
             font-size: 0.8rem;
         }
@@ -68,6 +79,10 @@
     border-radius: 0.5rem;
     padding: 1.5rem 1rem 1rem 1.3rem;
     line-height: 2.2rem;
+    @include tablet-only { 
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
 
     @include mobile-only {
         font-size: 0.8rem;

@@ -9,15 +9,21 @@
     margin-top: 6rem;
     margin-left: 0rem;
     margin-right: 0rem;
-    @include mobile-only {
+    // @include tablet-only {
+    //     height: 12rem;
+    //     margin-top: 2rem;
+    //     row-gap: 2rem;
+    // }
+    @include tablet-only {
         height: 10rem;
         margin-top: 1rem;
-        row-gap: 1.7rem;
+        row-gap: 1.3rem;
     }
 
     .footer__logo {
         width: 7.7rem;
-        @include mobile-only {
+
+        @include tablet-only {
             width: 7.5rem;
         }
     }
@@ -25,7 +31,7 @@
     p {
         color: white;
         font-size: 1.5rem;
-        @include mobile-only {
+        @include tablet-only {
             font-size: 0.7rem;
             font-weight: 500;
         }

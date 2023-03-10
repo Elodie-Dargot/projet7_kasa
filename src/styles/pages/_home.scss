@@ -1,6 +1,10 @@
 .homePage {
     @include marginPage;
 
+    @include tablet-only {
+        margin: 2rem 3rem;
+    }
+
     @include mobile-only {
         margin: 0 1.3rem;
     }
