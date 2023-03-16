@@ -1,5 +1,6 @@
 import React from 'react';
 
+//bannière pour les pages accueil et à propos
 const Banner = (props) => {
     return (
         <div className='banner'>

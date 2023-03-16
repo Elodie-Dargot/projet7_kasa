@@ -6,6 +6,7 @@ import bannerHomePage from '../assets/images/bannerHomePage.png';
 
 const Home = () => {
 
+    //je recupère les informations du fichier json contenant les informations sur les logements
     const HousingList = useLoaderData()
 
     return (

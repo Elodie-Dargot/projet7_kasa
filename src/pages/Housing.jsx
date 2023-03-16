@@ -6,7 +6,7 @@ import Ratings from '../containers/Ratings';
 
 
 const Housing = () => {
-
+    //je recupère les informations du fichier json contenant les informations sur les logements
     const housing = useLoaderData();
     return (
         <div className="housingPage">
@@ -37,7 +37,7 @@ const Housing = () => {
                 <Collapse className= 'housingPage__collapse' title= "Description" text={housing.description}/>
                 <Collapse className= 'housingPage__collapse' title= "Equipements" text={housing.equipments.map((equipement,index) => (
                     <p key={index}>{equipement}</p>
-                ))}/>
+                ))}/>{/* Le map permet ici d'afficher les équipements sous forme de liste */}
             </div>
         </div>
     );

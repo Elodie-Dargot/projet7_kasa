@@ -1,13 +1,13 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./base/base";
-@import "./components/header";
-@import "./components/navigation";
+@import "./layout/header";
+@import "./layout/navigation";
 @import "./components/banner";
 @import "./components/slideShow";
 @import "./components/card";
 @import "./components/collapse";
-@import "./components/footer";
+@import "./layout/footer";
 @import "./pages/home";
 @import "./pages/about";
 @import "./pages/housing";

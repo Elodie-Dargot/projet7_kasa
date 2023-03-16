@@ -1,7 +1,7 @@
 import React from 'react';
 
+//création du composant logo avec la couleur modulable 
 const Logo = (props) => {
-
 const logoColor = new Map([
     ['red', '/redLogo.svg'],
     ['white', '/whiteLogo.svg']
