@@ -1,3 +1,6 @@
+import React from "react";
+
+//page générée si l'erreur provient de l'application
 const ErrorPage = () => {
     return (
         <div id="errorPage">

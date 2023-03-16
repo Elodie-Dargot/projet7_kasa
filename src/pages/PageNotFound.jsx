@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 const PageNotFound = () => {
-
+//page générée lorsque l'URL n'existe pas
     return (
         <div className="PageNotFound">
             <section className="PageNotFoundBody">

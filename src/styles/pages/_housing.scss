@@ -188,14 +188,14 @@
     .housingPage__collapse__text {
         background-color: #f6f6f6;
         color: #FF6060;
-        width: 36.5rem;
+        width: 40vw;
         font-size: 1.1rem;
         font-weight: 400;
         border-radius: 0.5rem;
         padding: 1.5rem 1rem 1rem 1.3rem;
         line-height: 1.8rem;
         @include tablet-only { 
-            width: 21rem;
+            width: 44vw;
             font-size: 0.8rem;
             line-height: 1.3rem;
             padding: 1rem;

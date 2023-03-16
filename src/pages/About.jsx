@@ -10,9 +10,9 @@ const About = () => {
     return (
         <div className="aboutPage">
             <Banner className='bannerAboutPage' img={bannerAboutPage} />
-            <div className='aboutPage_collapses'>
+            <div className='aboutPage__collapses'>
                 {AboutCollapsesData.map((data) => (
-                    <Collapse key={data.id} className= 'aboutPage_collapse' title={data.title} text={data.text} />
+                    <Collapse key={data.id} className= 'aboutPage__collapse' title={data.title} text={data.text} />
                 ))}
             </div>
         </div>

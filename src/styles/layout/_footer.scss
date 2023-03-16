@@ -9,15 +9,12 @@
     margin-top: 6rem;
     margin-left: 0rem;
     margin-right: 0rem;
-    // @include tablet-only {
-    //     height: 12rem;
-    //     margin-top: 2rem;
-    //     row-gap: 2rem;
-    // }
+
     @include tablet-only {
         height: 10rem;
         margin-top: 1rem;
         row-gap: 1.3rem;
+
     }
 
     .footer__logo {
