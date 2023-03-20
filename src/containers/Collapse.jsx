@@ -7,27 +7,21 @@ const Collapse = (props) => {
     const toggle = () => {
         setOpen(!open)
     }
-
     //le useEffect permet d'ouvrir les collapses à partir du format tablette en mode portrait, sinon trop d'espace après le footer 
     useEffect(() => {
-
         const handleMediaQueryChange = (e) => {
             if (window.innerWidth >= 767 && e.matches) {
                 setOpen(true);
             } else {
                 setOpen(false)
             }
-        };
-        
+        };  
         const mediaQueryList = window.matchMedia('(orientation: portrait)');
-
         mediaQueryList.addEventListener('change', handleMediaQueryChange);
-
         return () => {
             mediaQueryList.removeEventListener('change', handleMediaQueryChange);
         };
     }, []);
-
     return (
         <div className={props.className}>
             <button onClick={toggle} className='collapse__button'>

@@ -7,9 +7,7 @@ const SlideShow = (props) => {
     const slide = props.img;
 
     function ChangeSlide(sens) {
-
         let newNumber = number + sens;
-
         if (newNumber < 0) {
             newNumber = slide.length - 1
         }
@@ -17,7 +15,6 @@ const SlideShow = (props) => {
         if (newNumber > slide.length - 1) {
             newNumber = 0;
         }
-
         setNumber(newNumber);
     }
     if (slide.length > 1) {
@@ -35,8 +32,6 @@ const SlideShow = (props) => {
                 <img src={slide[number]} alt="accomodations" className='slider__slide' />
             </div>
     )}
-
-    
 };
 
 export default SlideShow;
