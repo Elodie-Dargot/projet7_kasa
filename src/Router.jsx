@@ -31,9 +31,9 @@ const router = createBrowserRouter([
                 element: <Housing />,
                 loader: async ({ params }) => {
 
-                    const housing = HousingList.find(data => data.id === params.id)
+                const housing = HousingList.find(data => data.id === params.id)
 
-                    if (!housing) {
+                  if (!housing) {
                         return redirect("*")
 
                     } else {
