@@ -1,4 +1,4 @@
-.PageNotFoundBody {
+.pageNotFoundBody {
     @include marginPage;
     display: flex;
     flex-direction: column;
@@ -8,7 +8,7 @@
         margin: 1.3rem;   
        }
 
-    .PageNotFound__title {
+    .pageNotFound__title {
         font-size: 18rem;
         font-weight: 700;
         color: #FF6060;
@@ -19,7 +19,7 @@
            }
     }
 
-    .PageNotFound__text {
+    .pageNotFound__text {
         color: #FF6060;
         font-size: 2.2rem;
         font-weight: 500;
@@ -36,7 +36,7 @@
            }
     }
 
-    .PageNotFound__link {
+    .pageNotFound__link {
         margin-bottom: 10rem;
         font-size: 1.2em;
         font-weight: 500;
