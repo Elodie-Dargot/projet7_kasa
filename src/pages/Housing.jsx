@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import SlideShow from '../containers/SlideShow';
 import Collapse from '../containers/Collapse';
-import Ratings from '../containers/Ratings';
+import Ratings from '../components/Ratings'
 
 
 const Housing = () => {
